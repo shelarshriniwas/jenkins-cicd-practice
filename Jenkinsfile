@@ -25,13 +25,13 @@ pipeline {
 				}
 			}
 		}
-	stage('Terraform Plan') {
+	stage('Terraform Destroy') {
 				
 		steps {
 
 			dir('terraform'){
 
-				sh 'terraform apply -auto-approve'
+				sh 'terraform destroy -auto-approve'
 
 				}
 			}
