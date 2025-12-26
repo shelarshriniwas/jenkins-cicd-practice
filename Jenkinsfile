@@ -31,7 +31,7 @@ pipeline {
 
 			dir('terraform'){
 
-				sh 'terraform apply'
+				sh 'terraform apply -auto-approve'
 
 				}
 			}
