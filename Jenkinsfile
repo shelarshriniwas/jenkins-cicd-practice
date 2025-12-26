@@ -6,8 +6,9 @@ pipeline {
 	stage('Checkout'){
 			
 	steps {
-			git 'https://github.com/shelarshriniwas/jenkins-cicd-practice.git'
-	      }
+		git branch: 'main',
+		url: 'https://github.com/shelarshriniwas/jenkins-cicd-practice.git'
+		    }
 			}
 	stage('Docker Build'){
 		steps {
